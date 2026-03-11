@@ -54,7 +54,7 @@ for %%E in (%emails%) do (
         set outlookLocation=%outlookLocation%\%%E
 
         echo Creating link:
-        echo !target!  ->  !sourcefile!
+        echo !outlookLocation!  ->  !storelocation!
 
         mklink "!outlookLocation!" "!storelocation!"
     )
